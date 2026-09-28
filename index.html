@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurora Lashes · Lash Studio</title>
+    <meta
+      name="description"
+      content="Aurora Lashes – zgjatime qerpikësh, lash lift dhe brow lamination. E hënë – E shtunë, 8:00 – 16:30."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============ NAV ============ -->
+    <header class="nav" id="nav">
+      <a href="#kreu" class="nav__logo">Aurora <span>Lashes</span></a>
+      <button class="nav__toggle" id="navToggle" aria-label="Hap menunë">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links" id="navLinks">
+        <a href="#rreth">Rreth nesh</a>
+        <a href="#cmimet">Çmimet</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#lokacioni">Lokacioni</a>
+        <a href="#lokacioni" class="btn btn--small">Rezervo</a>
+      </nav>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="kreu">
+      <div class="hero__text">
+        <p class="eyebrow">Lash &amp; Brow Studio</p>
+        <h1><span class="script">Aurora</span> Lashes</h1>
+        <p class="hero__tagline">
+          Qerpikë të punuar me kujdes, për një shikim të natyrshëm dhe elegant.
+        </p>
+        <div class="hero__actions">
+          <a href="#cmimet" class="btn">Shiko çmimet</a>
+          <a href="#lokacioni" class="btn btn--ghost">Na gjej</a>
+        </div>
+        <p class="status" id="openStatus"></p>
+      </div>
+      <div class="hero__image">
+        <div class="arch">
+          <img src="images/IMG_8214.jpeg" alt="Zgjatime qerpikësh volume nga Aurora Lashes" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RRETH NESH ============ -->
+    <section class="about reveal" id="rreth">
+      <div class="about__image">
+        <img src="images/IMG_8210.jpeg" alt="Qerpikë wispy nga Aurora Lashes" loading="lazy" />
+      </div>
+      <div class="about__text">
+        <p class="eyebrow">Mirë se vjen</p>
+        <h2>Një moment vetëm <em>për ty</em></h2>
+        <p>
+          Tek Aurora Lashes çdo takim është një ritual i vogël bukurie. Përdorim
+          materiale cilësore dhe punojmë me durim e kujdes, që qerpikët e tu të
+          duken të natyrshëm, të lehtë dhe të bukur për ditë me radhë.
+        </p>
+        <ul class="perks">
+          <li>Materiale premium &amp; hipoalergjike</li>
+          <li>Ambient i qetë, i pastër dhe relaksues</li>
+          <li>Stil i personalizuar sipas syve të tu</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ÇMIMET ============ -->
+    <section class="prices reveal" id="cmimet">
+      <p class="eyebrow center">Menuja</p>
+      <h2 class="center">Çmimore</h2>
+      <p class="subtitle center">E hënë – E shtunë · 8:00 – 16:30</p>
+
+      <div class="price-grid">
+        <div class="price-card">
+          <h3>Zgjatime qerpikësh</h3>
+          <ul class="price-list">
+            <li>
+              <div>
+                <strong>Classic</strong
+                ><small
+                  >Një zgjatim për çdo qerpik – look natyral &amp;
+                  elegant</small
+                >
+              </div>
+              <span>27€</span>
+            </li>
+            <li>
+              <div>
+                <strong>Hybrid</strong
+                ><small>Mes classic dhe volume, pak më shumë dendësi</small>
+              </div>
+              <span>30€</span>
+            </li>
+            <li>
+              <div>
+                <strong>Volume</strong
+                ><small>Qerpikë të butë e të dendur për pamje glamour</small>
+              </div>
+              <span>30€</span>
+            </li>
+            <li>
+              <div>
+                <strong>Dark Volume</strong
+                ><small>Volum intensiv për një look dramatik</small>
+              </div>
+              <span>35€</span>
+            </li>
+            <li>
+              <div>
+                <strong>Wispy</strong
+                ><small>Efekt me maja, i lehtë dhe me teksturë</small>
+              </div>
+              <span>40€</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="price-card price-card--featured">
+          <span class="badge">Më e kërkuara</span>
+          <h3>M&amp;L Curl</h3>
+          <ul class="price-list">
+            <li>
+              <div>
+                <strong>M&amp;L Curl Natural</strong
+                ><small>Kurbë që ngre e hap shikimin natyrshëm</small>
+              </div>
+              <span>30€</span>
+            </li>
+            <li>
+              <div>
+                <strong>M&amp;L Curl Volume</strong
+                ><small>Kurbë M&amp;L me dendësi volume</small>
+              </div>
+              <span>35€</span>
+            </li>
+            <li>
+              <div>
+                <strong>Eye Liner</strong
+                ><small>Efekt eyeliner për shikim më të theksuar</small>
+              </div>
+              <span>35€</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="price-card">
+          <h3>Kujdes &amp; të tjera</h3>
+          <ul class="price-list">
+            <li>
+              <div>
+                <strong>Refill</strong><small>Mbushje brenda 2 javëve</small>
+              </div>
+              <span>20€+</span>
+            </li>
+            <li>
+              <div>
+                <strong>Removal</strong
+                ><small>Heqje e sigurt, pa dëmtuar qerpikët</small>
+              </div>
+              <span>10€</span>
+            </li>
+            <li>
+              <div>
+                <strong>Lash Lift</strong
+                ><small>Ngritje e qerpikëve natyralë</small>
+              </div>
+              <span>25€</span>
+            </li>
+            <li>
+              <div>
+                <strong>Brow Lamination</strong
+                ><small>Vetulla të plota, të rregullta &amp; të fiksuara</small>
+              </div>
+              <span>25€</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALERIA ============ -->
+    <section class="gallery reveal" id="galeria">
+      <p class="eyebrow center">Punimet tona</p>
+      <h2 class="center">Galeria</h2>
+      <div class="gallery__grid">
+        <img src="images/IMG_8205.jpeg" alt="Punim qerpikësh – volume" loading="lazy" />
+        <img src="images/IMG_8207.jpeg" alt="Punim qerpikësh – natyral" loading="lazy" />
+        <img src="images/IMG_8208.jpeg" alt="Punim qerpikësh – volume" loading="lazy" />
+        <img src="images/IMG_8209.jpeg" alt="Punim qerpikësh – classic" loading="lazy" />
+        <img src="images/IMG_8212.jpeg" alt="Punim qerpikësh – hybrid" loading="lazy" />
+        <img src="images/IMG_8213.jpeg" alt="Punim qerpikësh – volume" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- ============ LOKACIONI ============ -->
+    <section class="location reveal" id="lokacioni">
+      <div class="location__info">
+        <p class="eyebrow">Na vizito</p>
+        <h2>Ku na gjen</h2>
+
+        <div class="info-block">
+          <h4>Orari</h4>
+          <p>E hënë – E shtunë<br /><strong>8:00 – 16:30</strong></p>
+          <p class="muted">E diel: pushim</p>
+        </div>
+
+        <div class="info-block">
+          <h4>Rezervimet</h4>
+          <!-- TODO: vendos linkun e saktë të Instagramit / numrin e telefonit -->
+          <p>Na shkruaj në Instagram për termin.</p>
+          <a
+            href="https://www.instagram.com/auroraalashes/"
+            target="_blank"
+            rel="noopener"
+            class="btn"
+            >Rezervo në Instagram</a
+          >
+        </div>
+
+        <div class="map-links">
+          <a
+            href="https://maps.apple.com/?ll=42.365674,21.155632&q=Aurora%20Lashes"
+            target="_blank"
+            rel="noopener"
+            >Apple Maps ↗</a
+          >
+          <a
+            href="https://www.google.com/maps?q=42.365674,21.155632"
+            target="_blank"
+            rel="noopener"
+            >Google Maps ↗</a
+          >
+        </div>
+      </div>
+
+      <div class="location__map">
+        <iframe
+          title="Lokacioni i Aurora Lashes"
+          src="https://maps.google.com/maps?q=42.365674,21.155632&z=17&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <p class="footer__logo">Aurora <span>Lashes</span></p>
+            <p class="muted">© <span id="year"></span> Aurora Lashes</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
