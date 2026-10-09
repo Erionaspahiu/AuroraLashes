@@ -16,7 +16,7 @@ navLinks.querySelectorAll("a").forEach((link) =>
   link.addEventListener("click", () => {
     navToggle.classList.remove("open");
     navLinks.classList.remove("open");
-  })
+  }),
 );
 
 // ===== Seksionet shfaqen butë gjatë scroll =====
@@ -29,7 +29,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.15 }
+  { threshold: 0.15 },
 );
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 
@@ -37,17 +37,19 @@ document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 function updateOpenStatus() {
   const el = document.getElementById("openStatus");
   const now = new Date(
-    new Date().toLocaleString("en-US", { timeZone: "Europe/Belgrade" })
+    new Date().toLocaleString("en-US", { timeZone: "Europe/Belgrade" }),
   );
   const day = now.getDay(); // 0 = e diel
   const minutes = now.getHours() * 60 + now.getMinutes();
   const isOpen = day !== 0 && minutes >= 8 * 60 && minutes < 16 * 60 + 30;
 
-  el.textContent = isOpen ? "Tani jemi hapur" : "Tani jemi mbyllur · hapemi 8:00";
+  el.textContent = isOpen
+    ? "Tani jemi hapur"
+    : "Tani jemi mbyllur · hapemi në 9:00";
   el.style.setProperty("--dot", isOpen ? "#9DB88F" : "#CDB597");
 }
 updateOpenStatus();
 setInterval(updateOpenStatus, 60000);
-
+c
 // ===== Viti në footer =====
 document.getElementById("year").textContent = new Date().getFullYear();
