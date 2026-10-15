@@ -249,15 +249,20 @@
         <div class="info-block">
           <h4>Rezervimet</h4>
           <!-- TODO: vendos linkun e saktë të Instagramit / numrin e telefonit -->
-          <p>Na shkruaj në Instagram për termin.</p>
+          <p>Rezervo tani terminin tënd.</p>
           <a
-            href="https://www.instagram.com/auroraalashes/"
-            target="_blank"
-            rel="noopener"
-            class="btn"
-            >Rezervo në Instagram</a
-          >
-        </div>
+          
+<div class="booking-actions">
+  <button
+    id="Anywhere_button_iframe"
+    class="anywhere-book-now-button btn"
+    type="button"
+    data-booking-url="https://auroralashes8hnk.setmore.com"
+    data-new-tab="false">
+    Rezervo Terminin
+  </button>
+</div>
+
 
         <div class="map-links">
           <a
@@ -290,6 +295,12 @@
       <p class="footer__logo">Aurora <span>Lashes</span></p>
       <p class="muted">© <span id="year"></span> Aurora Lashes</p>
     </footer>
+    <script
+  id="anywhere_book_now_script"
+  src="https://assets.setmore.com/integration/book-now/live/v1/anywhere-book-now.js">
+</script>
+
+<script src="script.js"></script>
 
     <script src="script.js"></script>
   </body>
